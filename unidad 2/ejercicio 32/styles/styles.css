@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: rgb(230, 223, 222);
+ color:rgb(238, 22, 166) ;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font: size 14PX; ;
+ font-family:Arial, Helvetica, sans-serif ;
+}
+
+button {
+ cursor: pointer;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     gap: 20px;
+    position: sticky;
+    top:0;
+    left: 0;
+    width: 100%;
+    flex-direction: column
+}
+.header__ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin: 10px;
+    padding: 20px;
+    
+}
+.header__h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(226, 132, 176);
+    text-shadow: 2px 2px 5px rgb(150, 240, 6);
+    box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #b40666 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
+border-radius: 20px;
+
+}
+.header__a{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 5px solid rgb(235, 151, 190);
+    gap: 20px;
+    width: 100px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+main{
+    max-width: 800px;
+}
+.inicio{
+    padding: 30px;
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+background-color: black;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;    
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 200px;
+}
+
+.card__img{
+    width: 200px;
+    border: 20px solid purple;
+}
+.card__h3{
+    background-color: rgb(102, 67, 22);
+}
+.card__p{
+    background-color: burlywood;
+}
+.back-to-top{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    width: 50px;
+    border: 5px solid black;
+    background-color: rgb(92, 92, 112);
+}
+
+
+

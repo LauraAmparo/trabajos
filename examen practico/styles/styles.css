@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: open-sans;
+    src: url(./fonts/Open_Sans/);
+}
+
+:root {
+    --color-primary: #fff;
+    --color-secundary: #08090b;
+    --color-terciario: #989898;
+    --fuente-primary: open-sans;
+
+}
+
+body {
+    background: var(--color-primary);
+    color: white;
+}
+
+body,
+input,
+button {
+    font-size: 16px;
+    font-family: var(--fuente-primary);
+
+}
+
+button {
+    cursor: pointer;
+}
+
+/* estilos */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    position: top;
+
+
+
+}
+
+
+
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background-image: url(../assets/img/fondo_bugatti.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.title {
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 30px
+}
+
+.logo {
+    width: 127.553px;
+    height: 29.29px;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.nav__barra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFF;
+
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.caixa {
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn-primary {
+    border-radius: 2px solid var(--color-primary);
+
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="origin-when-cross-origin">
+    <script>//<![CDATA[
+      var s = false;
+      function l() {
+        setTimeout(f, 10000);
+        if (document.referrer) {
+          try {
+            var pm = /(^|&|\?)px=([^&]*)(&|$)/i;
+            var px = window.location.href.match(pm);
+            var rs = document.referrer;
+            if (px != null) {
+              if (rs.match(pm))
+                rs = rs.replace(pm, "$1px=" + px[2] + "$3");
+              else if (rs.indexOf("?") != -1)
+                rs = rs + "&px=" + px[2];
+              else
+                rs = rs + "?px=" + px[2];
+            }
+            history.replaceState({}, "Bing", rs);
+            window.addEventListener("pageshow", function(e) { if (e.persisted || (typeof window.performance != "undefined" && window.performance.navigation.type === 2)) window.location.reload(); });
+            s = true;
+            setTimeout(r, 10);
+            return;
+          } catch (e) {}
+        }
+        r();
+      }
+      function r() {
+        var u = "/videos/riverview/relatedvideo?q=recetas+naturales&mid=EC4F9B94DED6C0A3903CEC4F9B94DED6C0A3903C&FORM=VIRE";
+        if (s)
+          window.location.href = u;
+        else
+          window.location.replace(u);
+      }
+      function f() {
+        document.getElementById("fb").style.display = "block";
+      }
+      //]]>
+    </script>
+  </head>
+  <body onload="l()">
+    <div id="fb" style="display: none">
+      Please <a href="https://www.bing.com/ck/a?!&&p=14cb8814857428daf7bcd9d19e313766967b4c7360244089a9717577bd29f01cJmltdHM9MTczNzkzNjAwMA&ptn=3&ver=2&hsh=4&fclid=1db19ff8-cf8e-610c-2d81-8a96cef76081&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9cmVjZXRhcytuYXR1cmFsZXMmbWlkPUVDNEY5Qjk0REVENkMwQTM5MDNDRUM0RjlCOTRERUQ2QzBBMzkwM0MmRk9STT1WSVJF&ntb=F">click here</a> if the page does not redirect automatically ...
+    </div>
+  </body>
+</html>

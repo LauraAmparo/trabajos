@@ -1,0 +1,127 @@
+
+
+ * {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+ }
+ @font-face {
+    font-family: OpenSans;
+    src: url(./fonts/OpenSans-VariableFont_wdtht.ttf);
+}
+@font-face {
+    font-family: Questrial;
+    src: url(../style/fonts/Questrial-Regular.ttf);
+} 
+:root{
+    --cor-principal:#93524C;
+    --cor-secundario:#1B6B6A;
+    --cor-terciario: #DDA55A;
+    --cor-fondo: #F0EBD8;
+    --cor-gray: #5C5B5B;
+    --fonte-principal:OpenSans;
+    --fonte-seundaria:Questrial;
+}  
+    
+    
+
+ 
+
+ body {
+  background:var(--cor-fondo) ;
+  color: var(--cor-secundario);
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  height: 100%;
+ }
+
+ body, input, button, table {
+  font-size:14px ;
+  font-family:var(--fonte-principal);
+ }
+
+ #root {
+  margin:0 ;
+  padding: 0;
+  max-width: 768px; 
+ }
+
+ button {
+  cursor: pointer;
+ }
+ /* estilos header */
+
+
+
+
+.form__container {
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 1rem;
+}
+.logo-siboney{
+    width: 200px;
+height: 103px;
+}
+
+.inicio{
+    display: flex;
+}
+
+.inicio__p{
+    color: var(--cor-principal);
+
+font-family: Questrial;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+letter-spacing: -0.48px;
+}
+.inicio__title{ 
+    
+ color:var(--cor-secundario); 
+font-family: Questrial;
+font-size: 85px;
+font-style: normal;
+font-weight: 400;
+ 
+}
+.inicio__p1{
+    color: var(--cor-gray);
+}
+.header__nav{
+    display: flex;
+    justify-content: flex-end;
+    align-content: end;
+    gap: 20px;
+    text-decoration: none;
+
+}
+.inicio__img{
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+
+  }
+  a{
+    border-radius: 2px solid var(--cor-secundario);
+  }
+  inicio__p{
+    color: var(--cor-principal);
+  }
+  .product__details{
+    border-radius: 2px solid var(--cor-secundario);
+    gap: 12px;
+}
+
+.product{
+    display: flex;
+    background-color: var(--cor-secundario);
+}
+   
+               
+

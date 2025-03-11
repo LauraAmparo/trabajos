@@ -1,0 +1,75 @@
+
+body{
+    background: rgb(5, 7, 141);
+background: radial-gradient(circle, rgb(23, 14, 197) 0%, rgb(146, 8, 128) 35%, rgb(24, 209, 247) 100%);
+}
+.froitas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#fresas:hover{
+    background-blend-mode: multiply;
+}
+#limons:hover{
+    background-blend-mode: multiply;
+}
+#uvas:hover{
+    background-blend-mode: darken;
+}
+.froita{
+    width: 300px;
+    height: 300px;
+    background:color(srgb rgb(124, 65, 65) rgb(156, 184, 156) rgb(135, 135, 196));
+    border: 4px solid rgb(114, 40, 163);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+.tres{
+    width: 100px ;
+    background-color: rgb(7, 214, 59);
+}    
+.dos{
+    background-color: gold;
+}
+.uno{
+    background-color: firebrick;
+    text-shadow: darkblue;
+    
+}
+h2{
+    color: rgb(113, 46, 201);
+    letter-spacing: 6px;
+    font-size: 60px;
+    text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd, 3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4, 5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd, 6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4, 8px 7px 0px #5dabcd
+}
+#fresas{
+   background-image: url('../assets/fresas.webp'); 
+   background-color: rgb(238, 5, 5);
+background-position:top ;
+border-radius: 50px;
+background-size: cover;
+}
+#limons{
+    background-image: url('../assets/limones.webp');
+    background-position: top;
+    background-color: rgb(196, 212, 52);
+    border-radius: 50px;
+    background-size: cover;
+}
+#uvas{
+    background-image: url('../assets/uvas.webp');
+    background-position: top;
+    background-color: chartreuse;
+    border-radius: 50px;
+    background-size: cover;
+}
+    .boton{
+    width: 100px;
+    background-color: rgba(114, 48, 189, 0.801);
+}   
+
+

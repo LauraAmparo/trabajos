@@ -1,0 +1,29 @@
+
+body{
+    background-color: antiquewhite;
+}
+
+h1{
+    color: rgb(0, 255, 85);
+    font-size: 18px;
+    border: 1px solid black;
+}
+
+h1{
+    color: brown;
+
+
+   text-align: center;
+ }
+main{
+    height: 50vh;
+}
+ p{
+    color: darkblue;(255, 220, 231);
+ }
+ li{
+    color: blue ;
+ }
+ footer{
+    border:1px solid crimson ;
+ }

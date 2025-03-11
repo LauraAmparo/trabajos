@@ -1,0 +1,26 @@
+.textos{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: brown;
+    border-radius: 40px;
+    
+}
+
+.texto {
+    width: 1.2px 1.5px;
+    color: blue;
+    font-size: 20px;
+    font-family: 'Pacifico';
+    text-align: center;
+    text-transform: uppercase;
+    letter: spacing 2px;
+    text-shadow: 2px 2px 5px gray ;
+    margin: 20px 40px;
+    
+    
+}
+@font-face {
+    font-family: 'Pacifico' ;
+    src: url(fonts/Pacifico-Regular.ttf);
+}
+

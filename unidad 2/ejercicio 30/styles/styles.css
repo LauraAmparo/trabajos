@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background:rgb(218, 218, 226) ;
+ color:red ;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size:14px ;
+ font-family:Arial, Helvetica, sans-serif ;
+ padding: 50px;
+}
+
+button {
+ cursor: pointer;
+}
+
+/* estilos xerais */
+.header{
+  background-image: url(../assets/imagens/que_es_un_jardin_botanico_4290_orig.jpg);
+  background-size: contain;
+}
+
+.header:hover{
+  background-color: black;
+
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+.menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 80px;
+  padding: 20px;
+
+}
+.menu__a{
+  text-decoration: none;
+  border: 2px solid;
+  padding: 10px;
+}
+
+
+main{
+  display: flex;
+  gap: 20px;
+}
+
+.flores{
+  display: flex;
+  gap: 20px;
+  max-width: 800px;
+  flex-wrap: wrap;
+
+}
+.tarxeta{
+ width: 200px; 
+}
+
+  
+
+.contenedor{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+}
+  
+ 
+.footer{
+  font: medium;
+  
+}
+
+@media (max-width:768px) {
+  
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flores{
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+}
+.main{
+  width: 50px;
+}
+
+}

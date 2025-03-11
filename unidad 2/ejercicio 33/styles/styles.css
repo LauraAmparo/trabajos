@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background:yellow ;
+ color: pink;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font: size 14px; ;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+button {
+ cursor: pointer;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.btn{
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn-1{
+    background-color: cornflowerblue;
+    color: white;
+    transition: all 0.3s ease;
+}
+.btn-1:hover{
+    background-color: #29800b;
+    rotate: 180deg;
+}
+.btn-2{
+    background-color: #2ecc71;
+    color: white;
+    transition: scale 0.3 ease;
+}
+.btn-2:hover{
+    scale: 1.1;
+}
+.btn-3{
+    background-color: brown;
+    color: white;
+    transition: scale 0.5;
+}
+.btn-3:hover{
+background-color: aqua;
+transition: scale 0.5;
+scale: 2;
+}
+
+.btn-4 {
+    background-color: chocolate;
+    color: rgb(184, 11, 54);
+   
+    transition: all .5s ease;
+}
+.btn-4:hover{
+    rotate: 360deg;
+}
+.btn-5{
+    background-color: blueviolet;
+    color: #15800b;
+   
+}
+.btn-5:hover{
+    transition: scale 0.2;
+    scale: 0.5;
+}
+.btn-6{
+    background-color: darkmagenta;
+    color: aquamarine;
+}
+.btn-6:hover{
+    transition: -moz-transform: translate(24px, 41px) skew(43deg, 16deg);
+    -webkit-transform: translate(24px, 41px) skew(43deg, 16deg);
+    -o-transform: translate(24px, 41px) skew(43deg, 16deg);
+    -ms-transform: translate(24px, 41px) skew(43deg, 16deg);
+    transform: translate(24px, 41px) skew(43deg, 16deg);;
+}

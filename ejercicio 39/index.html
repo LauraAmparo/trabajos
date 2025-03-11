@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio39</title>
+    <link rel="stylesheet" href="./styls/styles.css">
+</head>
+
+<body>
+    <form class="form" action="form" method="get">
+        <h1>Formulario</h1>
+        <br>
+        <div class="form__name">
+
+            <h2>Datos Personales</h2>
+
+            <br>
+            <label form="name">Nome completo</label>
+            <input type="text" name="name" id="name" placeholder="Escribe tu nombre">
+        </div>
+        <br>
+
+        <div class="form__email">
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" id="email" placeholder="Escribe tu correo">
+        </div>
+        <br>
+
+
+        <div class="from__contasinal">
+
+            <label for="contasinal">Contrasinal</label>
+            <input type="password" id="contrasinal" name="contrasinal" placeholder="contraseña">
+
+        </div>
+        <br>
+
+
+        <div class="from__telefono">
+            <label for="telefono">Telefono de Contacto</label>
+            <input type="telefono" id="telefono" name="telefono" placeholder="Escribe tu número telefonico">
+
+        </div>
+        <br>
+
+
+        <div class="form__select">
+            <label for="country">País de residencia</label>
+            <select name="country" id="country">
+                <option value="">Selecciona un país</option>
+                <option value="es">España</option>
+                <option value="pt">Portugal</option>
+                <option value="fr">Francia</option>
+            </select>
+            <br>
+            <br>
+
+
+
+            <div class="form__radio">
+                <h4>Xénero</h4>
+                <br>
+                <label for="gender">Masculino</label>
+                <input type="radio" name="gender" id="masculino" value="masculino">
+                <label for="femenino">Femenino</label>
+                <input type="radio" name="gender" id="femenino" value="femenino">
+                <label for="other">Outro</label>
+                <input type="radio" name="gender" id="otro" value="otro">
+            </div>
+            <br>
+            <div class="from__intereses">
+                <!-- <h2>Intereses</h2> -->
+                <br>
+                <label for="interes">Intereses</label>
+                <input type="checkbox" id="deportes">Deportes
+                <input type="checkbox" id="música">Música
+                <input type="checkbox" id="viajes">Viajes
+                <input type="checkbox" id="tecnoloxía">Tecnoloxía
+                <input type="checkbox" id="cine">Cine
+                <input type="checkbox" id="lectura">Lectura
+                <input type="checkbox" id="otros">Otros
+
+            </div>
+            <br>
+            <br>
+
+<div>
+            <input class="enviar" type="submit" value="enviar">
+         </div>
+    </form>
+
+</body>
+
+</html>

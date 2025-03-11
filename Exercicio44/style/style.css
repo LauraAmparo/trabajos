@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url(./fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url(./fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url(./fonts/Poppins-Medium.ttf);
+}
+
+body {
+  background-image: url(../assets/img/ducati-diavel-v4.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  color: var(--color-primario);
+  -webkit-font-smoothing: antialiased;
+
+}
+
+body,
+input,
+button,
+table {
+  font: size 14px;
+  font-family: var(--fonte-primaria);
+}
+
+:root {
+  --color-primario: #666666;
+  --color-secundario: #3E4C66;
+  --color-terciario: #CC0000;
+  --color-cuaternario: #CC0000;
+  --fonte-primaria: Poppins-Regular;
+  --fonte-secundaria: Poppins-SemiBold;
+  --fonte-terciaria: Poppins-Medium;
+
+}
+
+/* estilos globales */
+
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100vh;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+.header__a {
+  font-family: var(--fonte-primaria);
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--color-primario);
+}
+
+.header__nav--menu {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1rem;
+
+}
+
+.form-check {
+  font-size: 1rem;
+  font-family: var(--fonte-terciaria);
+  color: var(--color-primario);
+
+}
+
+.form-select {
+  color: var(--color-primario);
+}
+
+.form__barra {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: 1rem;
+  font-family: var(--fonte-primaria);
+  color: var(--color-secundario);
+}
+
+.form__campos {
+  background-color: white;
+  
+}
+
+.form__radios {
+  display: flex;
+  gap: 10px;
+  color: var(--color-primario);
+
+}
+
+.form__button {
+  background-color: var(--color-cuaternario);
+  border: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: var(--color-primario);
+  font-size: 1rem;
+  font-family: var(--fonte-primaria);
+  height: 100px;
+  width: 100vw;
+  gap: 40px;
+}
+
+
+@media (max-width:768px) {
+  body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    
+  
+   }
+  main {
+   position: fixed;
+   bottom: 10%;
+  }
+ form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  } 
+  .container{
+    display: flex;
+   flex-direction: column;
+  }
+
+
+
+ .footer {
+      position: fixed;
+      bottom: 0px;
+
+      width: 100vw;
+      
+  }
+  .footer__img{
+    width: 100vw;
+  } 
+
+  .header__a{
+    font-size: 10px;
+  }
+}
