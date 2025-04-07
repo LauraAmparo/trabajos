@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 56</title>
+
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__logo">
+            <img src="./assets/img/logo-ac_jade_horizontal.png" alt="">
+        </div>
+        <div class="header__nav">
+            <a class="header__a--inicio" href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/ac_jade_symbol.svg" alt="logo">
+
+            </a>
+        </div>
+        <div class="barra">
+            <a href="">FEATURED</a>
+            <a href="">NEWS</a>
+            <a href="">MEDIA</a>
+            <a href="">DESCOVERY</a>
+
+        </div>
+        <div class="imagen__logo">
+            <a href=""><img src="./assets/img/socials.png" alt=""></a>
+        </div>
+        <a href=""> <img src="./assets/img/btn_register.svg" alt=""></a>
+
+    </header>
+    <video id="video" autoplay muted loop>
+        <source src="./assets/video/ac_jade_background.mp4" type="video/mp4">
+
+    </video>
+    <main class="main">
+        <div class="details">
+            <div class="details__logo">
+                <img src="./assets/img/logo-ac_jade.png" alt="">
+
+            </div>
+            <div class="details__markets">
+                <a href=""><img src="./assets/img/android.png" alt=""></a>
+                <a href=""><img src="./assets/img/apple.png" alt=""></a>
+
+            </div>
+            <button onclick="abrirModal()" class="imagen__video">
+                <img src="./assets/img/video-img-poster.svg" alt="">
+            </button>
+            <div class="details__subs">
+                <a href="">
+                    <img src="./assets/img/btn_subscribe.svg" alt="">
+                </a>
+            </div>
+            </div>
+
+        </div>
+
+
+
+        <div id="modal" class="modal">
+            <div class="modal-contido">
+                <button id="pecharModal" class="pechar">&times;</button>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9A-Ic34pgvo?si=2ErHQN6loSG08p3q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+
+
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background:rgb(206, 166, 166) ;
+ color:black ;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size:14px ;
+ font-family: cursive;
+ border: 1px solid black;
+ display: flex;
+ flex-direction: column;
+ margin: 30px 20px;
+}
+
+button {
+ cursor: pointer;
+
+}
+/* estilos */
+.header-h1{
+    display: flex;
+    flex: content;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    margin-top: 15px;
+    padding: 20px;
+}
+.header-h2{
+    display: flex;
+    flex: content;
+    justify-items: flex-start;
+    align-content: flex-start;
+    color: rgb(97, 97, 228);
+    padding: 20px;
+}
+.main{
+    margin: 20px;
+}
+.button{
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1rem;
+
+}
+

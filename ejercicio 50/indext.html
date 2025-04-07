@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="calculator">
+       <div class="calculadora">
+            <input type="text" id="display" readonly>
+        </div>
+
+        <!--Bótons numéricos e de operadores-->
+    
+    <div class="numeros">
+        <div class="numeros1">
+            <button class="numero" onclick="appendCharacter('1')">1</button>
+            <button class="numero" onclick="appendCharacter('2')">2</button>
+            <button class="numero" onclick="appendCharacter('3')">3</button>
+            <button class="numero" onclick="setOperador('/')">/</button>
+        </div>
+        <div class="numeros2">
+            <button class="numeroa" onclick="appendCharacter('4')">4</button>
+            <button class="numeroa" onclick="appendCharacter('5')">5</button>
+            <button class="numeroa" onclick="appendCharacter('6')">6</button>
+            <button class="numeroa" onclick="setOperador('*')">*</button>
+        </div>
+        <div class="numeros3">
+            <button class="numerob" onclick="appendCharacter('7')">7</button>
+            <button class="numerob" onclick="appendCharacter('8')">8</button>
+            <button class="numerob" onclick="appendCharacter('9')">9</button>
+            <button class="numerob" onclick="setOperador('-')">-</button>
+        </div>
+        <div class="simbolos">
+            <button class="simbolo" onclick="appendCharacter('0')">0</button>
+            <button class="simbolo" onclick="clearDisplay()">C</button>
+            <button class="simbolo" onclick="calculate()">=</button>
+            <button class="simbolo" onclick="setOperador('+')">+</button>
+
+        </div></div>
+
+
+        
+
+
+    </div>
+
+
+    
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

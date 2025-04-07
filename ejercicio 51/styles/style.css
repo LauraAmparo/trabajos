@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+   background: #044274;
+   color: white ;
+   -webkit-font-smoothing: antialiased;
+   background-image: url(../assets/img1.webp)
+  }
+  
+  body, input, button {
+   font-size: 14px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  }
+  
+  button {
+   cursor: pointer;
+  }
+  
+  :root{
+    --color-primary: #040505;
+    --color-gradient: conic-gradient(#ff4545,#00ff99,#006aff,#ff0095,#ff4545);
+    
+  }
+  
+  /* Lista */
+ 
+  
+  
+  .header{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 1.5rem;
+
+  }
+  
+  .main{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      width: 100vw;
+      height: 100vh;
+      gap: 30px;
+  }
+  @property --angle{
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+  }
+  
+  #novaEntrada{
+     height: 40px;
+     width: 250px;
+    
+     
+  }
+  
+  .search__button{
+    height: 40px;
+    background-color: var(--color-primary);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0px 10px;
+  }
+  
+  #lista{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    font-family:fantasy ;
+    color: #00ff99;
+  }
+  
+  .lista__item{
+      margin: 0 auto;
+      padding: 2rem;
+      width: 300px;
+      background: var(--color-primary);
+      text-align: center;
+      border-radius: 10px;
+      position: relative;
+      font-size: 2rem;
+      text-transform: lowercase;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .lista__item:after, .lista__item::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: conic-gradient(from var(--angle),#0e1ceb,#a80c0c);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      padding: 3px;
+      border-radius: 10px;
+  animation: rotar 1s linear infinite;
+  }
+  
+  .lista__item::before{
+      filter: blur(1.5rem);
+      opacity: .5;
+  
+  }
+  
+  .lista__borrar{
+    height: 40px;
+    background-color: var(--color-primary);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 15px;
+  }
+ @keyframes rotar{
+    0%{
+        --angle:0deg
+    }
+    100%{
+        --angle:360deg
+    }
+ }
+
+  
+  
+ 

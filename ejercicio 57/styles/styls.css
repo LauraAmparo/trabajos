@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'saira';
+    src: url(../styles/fonts/Saira-VariableFont_wdth.ttf)
+}
+
+@font-face {
+    font-family: sairacondensed;
+    src: url(../styles/fonts/SairaCondensed-Bold.ttf);
+}
+
+@font-face {
+    font-family: saira-medium;
+    src: url(../styles/fonts/SairaCondensed-Medium.ttf);
+}
+
+@font-face {
+    font-family: saira-semiBlond;
+    src: url(../styles/fonts/SairaCondensed-SemiBold.ttf);
+
+}
+
+:root {
+    --font-primary: saira;
+    --font-secondary: sairacondensed;
+    --font-terciary: saira-medium;
+    --font-cuaternary: saira-semiBlond;
+}
+
+body {
+    background: black;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+
+}
+
+body,
+input,
+button {
+    font-size: 14px;
+    font-family: var(--font-primary);
+}
+
+button {
+    cursor: pointer;
+}
+
+/* estilos */
+/* .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+} */
+
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 58px;
+    width: 100%;
+
+}
+.header{
+    background: rgba(31, 30, 30, 0.80);
+    backdrop-filter: blur(13.591408729553223px);
+    padding-right: 20px;
+}
+.img{
+    display: flex;
+    flex-direction: initial;
+    justify-content: flex-start;
+}
+
+.header__shop{
+    width: 24.917px;
+    height: 24.917px;
+    flex-shrink: 0;
+    display: flex;
+
+  
+    
+    
+    
+   
+    
+}
+
+
+
+.header__nav {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+
+}
+
+
+.menu-list {
+    display: flex;
+
+    list-style: none;
+    gap: 80px;
+
+
+
+}
+
+.menu-link {
+    font-family: var(--font-primary);
+    color: white;
+    text-decoration: none;
+}
+
+.show {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+}
+
+.formato {
+    display: flex;
+    justify-content: space-between;
+    height: 513px;
+    flex-shrink: 0;
+    /* background: rgba(31, 30, 30, 0.80);
+    backdrop-filter: blur(13.591408729553223px); */
+    text-decoration: none;
+    list-style: none;
+    padding-left: 40px;
+}
+
+.formato li {
+    list-style: none;
+}
+
+.formato img {
+    width: 79px;
+    height: 79px;
+    flex-shrink: 0;
+}
+
+.componentes {
+    width: 158px;
+    height: 406px;
+    flex-shrink: 0;
+}
+
+.gamme {
+    width: 137px;
+    height: 307px;
+    flex-shrink: 0;
+}
+
+.monitores {
+    width: 105px;
+    height: 208px;
+    flex-shrink: 0;
+}
+
+.shopping {
+    width: 150px;
+    height: 175px;
+    flex-shrink: 0;
+}
+
+.comprar {
+    width: 123px;
+    height: 307px;
+    flex-shrink: 0;
+}
+
+.caixa {
+    margin: 20px;
+    padding: 20px;
+}
+
+.caixa img {
+    display: flex;
+    justify-content: end;
+    width: 116px;
+    height: 116px;
+    flex-shrink: 0;
+}
+
+
+
+.raton {
+    width: 300px;
+    height: 128px;
+    flex-shrink: 0;
+    color: white;
+    font-family: Saira;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    border-top: 2px solid white;
+    padding: 10px;
+
+}
+
+.raton a {
+    color: #EBE81A;
+}
+
+
+.teclado {
+    width: 300px;
+    height: 128px;
+    flex-shrink: 0;
+    color: white;
+    font-family: Saira;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    padding: 30px;
+    border-top: 2px solid white;
+
+}
+
+.teclado a {
+    color: #EBE81A;
+}
+
+
+#video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+h1 {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    color: #FFF;
+    font-family: Saira;
+    font-size: 79px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    font-family: Saira;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+}
+
+span {
+    font-weight: 700;
+    color: #FFF;
+    font-family: Saira;
+    font-size: 79px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+
+    }
+
+
+.header__menu {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 12px;
+
+
+}
+.formato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+   
+}
+}
+
+
+
+

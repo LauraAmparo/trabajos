@@ -1,0 +1,42 @@
+{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+@font-face{
+    font-family:franchise;
+        src:url('../style/font/Franchise-Bold-hinted.ttf');
+    }
+}
+
+body {
+ background:black ;
+ color: white;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 14px;
+ font-family:franchise ;
+}
+
+button {
+ cursor: pointer;
+}
+/* estilos */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+   
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 20px;
+    
+}
+.logo{
+    display: flex;
+    justify-content: ;
+}

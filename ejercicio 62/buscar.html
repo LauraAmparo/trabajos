@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio62</title>
+    <link rel="stylesheet" href="./bulma.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>
+        <header class="header">
+            <nav class="navbar" role="navigation" aria-label="main navigation ">
+                <div class="navbar-brand">
+                    <a class="navbar-item has-text-weight-bold" href="index.html">
+                        Clima en Ames
+                    </a>
+
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                        data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item" onclick="actualizarDatos(42.84,-8.57)">
+                            O Milladoiro
+                        </a>
+
+                        <a class="navbar-item" onclick="actualizarDatos(42.85, -8.65)">
+                            Bertamiráns
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </header>
+    <main>
+        <a href="indext.html" class="titulo__a is-flex is-justify-content-center "></a>
+       
+    <div class="column">
+        <h1 id="clima">CLIMA DE CIUDADES</h1>
+       
+        <input id="cidade" class="input" type="text" placeholder="Escribe unha cidade" />
+        <button class="button is-link" onclick=" obterCoordenadas()">Buscar Ciudad</button>
+   
+        </div>
+        <div id="resultados" class="datos__ciudad"></div>
+
+    </div>
+    </main>
+    
+
+<script src="./js/buscar.js"></script>
+</body>
+</html>

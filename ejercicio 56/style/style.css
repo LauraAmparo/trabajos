@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: hiragino;
+    src: url(./fonts/Hiragino.ttf);
+}
+
+@font-face {
+    font-family: open;
+    src: url(./fonts/OpenSans-VariableFont_wdth.ttf);
+
+}
+
+
+
+
+:root {
+    --font-primaria: hiragino;
+    --font-secundaria: open;
+}
+
+
+
+
+body {
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+    font: size 14px;
+    font-family: var(--font-secundaria);
+}
+
+button {
+    cursor: pointer;
+}
+
+/* estilos */
+#video {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+.header {
+    background-image: url(../assets/img/topbar-bg.png);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1920px;
+    height: 88px;
+    flex-shrink: 0;
+    padding: 120px;
+  
+}
+
+.header__logo img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 165.517px;
+    height: 60px;
+    flex-shrink: 0;
+
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 53px;
+    flex-shrink: 0;
+    width: 113px;
+    height: 87px;
+    flex-shrink: 0;
+
+}
+
+.main {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 120px;
+
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+.barra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.barra a {
+    text-decoration: none;
+
+    color: #E9C78B;
+    font-family: "Hiragino Mincho Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.details__logo {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+
+}
+
+.details__logo img {
+    width: 220px;
+}
+
+.details__markets {
+
+    flex-shrink: 0;
+
+}
+
+.details__subs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 343px;
+    height: 53.594px;
+    flex-shrink: 0;
+}
+
+.details__markets-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 108.9px;
+    height: 36px;
+    flex-shrink: 0
+}
+
+@media (max-width: 768px) {
+
+    /* Add responsive styles here */
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: auto;
+        font-size: 0.5rem;
+        margin: 90px;
+
+    }
+
+    .body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: auto;
+        
+
+    }
+
+}
+
+.barra {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.imagen__logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 20%;
+    margin: 20px;
+}
+.imagen__video img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 80px;
+}
+.imagen__video{
+    width: 300px;
+    height: 300px;
+}
+
+    
+
+

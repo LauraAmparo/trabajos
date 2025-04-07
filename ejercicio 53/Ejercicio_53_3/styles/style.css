@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: beige;
+ color:rgb(82, 78, 78) ;
+ -webkit-font-smoothing: antialiased;
+ border: 1px solid black;
+ width: 600px;
+ height: 500px;
+ margin: 90px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ 
+}
+
+body, input, button {
+ font-size:14px ;
+ font-family:cursive ;
+ margin: 1px solid black;
+ padding: 10px;
+ 
+}
+
+button {
+ cursor: pointer;
+}
+/* Estilos */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+h2{
+    margin: 10px;
+}
+.deidades__h3{
+    font-size: 1.5rem;
+    color:rgb(187, 127, 54);
+    padding: 10px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.deidades__botons button{
+    color: blueviolet;
+}
+.deidades__p{
+    color: rgb(223, 39, 39);
+}

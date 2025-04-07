@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: rgb(245, 242, 238);
+ color:rgb(8, 8, 8) ;
+ -webkit-font-smoothing: antialiased;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+
+}
+
+body, input, button {
+ font-size:14px;
+ font-family:Arial, Helvetica, sans-serif ;
+}
+
+button {
+ cursor: pointer;
+}
+/* estilos */
+.calculator1{
+    width: 500px;
+    height: 500px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+   
+    gap: 10px;
+    background-color: orange;
+
+}
+input{
+    width: 100px;
+    height: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+}
+
+
+
+
+ #display{
+    width: 400px;
+    height: 400px;
+
+ } 
+.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    margin-bottom: 100px; 
+    margin-top: 10px; 
+    gap: 10px;
+}
+
+.digit{
+    width: 70px;
+}
+
+.operador{
+    width: 70px;
+}
+#equals{
+    width: 70px;
+}
+#clear{
+    width: 70px;
+}
+
+

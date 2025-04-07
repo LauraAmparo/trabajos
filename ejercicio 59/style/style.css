@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: bold;
+    src: url(../style/fonts/Helvetica-Bold.ttf);
+}
+
+@font-face {
+    font-family: helvetica;
+    src: url(../style/fonts/Helvetica.ttf);
+}
+
+:root {
+    --font-primary: 'bold';
+    --font-secundary: helvetica;
+}
+
+body {
+    background: white;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+    font-size: 14px;
+    font-family: var(--font-primary);
+
+}
+
+button {
+    cursor: pointer;
+}
+
+/* estilos */
+
+#coche_blue {
+    display: none;
+}
+
+#coche_white {
+    display: none;
+}
+
+#coche_yellow {
+    display: none;
+}
+
+#coche_black {
+    display: none;
+}
+
+#coche_grey {
+    display: none;
+}
+
+.coche {
+    width: 100%;
+    height: 100%;
+}
+
+.volvo {
+    width: 205.818px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+
+
+
+.caixa {
+    display: block;
+}
+
+.parrafo {
+    width: 1920px;
+    height: 54px;
+    flex-shrink: 0;
+}

@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../style/fonts/Poppins.ttf);
+}
+
+:root {
+    --font-primary: poppins
+}
+
+body {
+    background-image: url(../assets/cielo.jpg);
+    background-repeat: no-repeat;
+    color: rgb(54, 21, 21);
+    -webkit-font-smoothing: antialiased;
+    height: 100vh;
+    width: 100vw;
+    
+    
+    
+
+}
+
+
+    
+    
+
+
+

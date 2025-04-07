@@ -1,0 +1,101 @@
+* {
+   margin: 0;
+   padding: 0;
+   outline: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background: rgb(236, 232, 232);
+   color: black;
+   -webkit-font-smoothing: antialiased;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+body,
+input,
+button,
+table {
+   font-size: 14px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* estilos */
+button {
+   cursor: pointer;
+}
+
+
+.calculator {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid;
+   height: 500px;
+   width: 300px;
+   background-color: cyan;
+
+
+}
+
+.calculadora{
+   display: flex;
+   justify-content: center;
+   margin: 30px;
+   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75)
+   width: 50px;
+   height: 50px;
+}
+
+
+.numeros {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 10px;
+   margin-bottom: 30px;
+   gap: 5px;
+   
+}
+
+.numero {
+   width: 50px;
+   height: 50px;
+   box-shadow:box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75)
+
+
+}
+
+.numeroa {
+   width: 50px;
+   height: 50px;
+   box-shadow:box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75)
+}
+
+.numerob {
+   width: 50px;
+   height: 50px;
+   box-shadow:box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75)
+}
+
+.simbolo {
+   width: 50px;
+   height: 50px;
+   box-shadow:box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75)
+}

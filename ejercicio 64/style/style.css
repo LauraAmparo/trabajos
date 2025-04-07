@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+
+  @font-face {
+    font-family: poppins;
+    src: url(../style/fonts/Poppins.ttf);
+  }
+
+  :root {
+    --font-primary: poppins
+  }
+
+  body {
+    background-image: url(../assets/cielo.jpg);
+    background-repeat: no-repeat;
+    color: rgb(54, 21, 21);
+    -webkit-font-smoothing: antialiased;
+    height: 100vh;
+    width: 100vw;
+
+
+
+
+  }
+
+  .column {
+    font-size: 30px;
+    font-family: var(--font-primary);
+
+  }
+
+  #cidade {
+    font-size: 20px;
+    font-family: var(--font-primary);
+    margin: 30px 30px 30px 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* tiempo por horas */
+
+
+  .pronostico {
+    margin: 1rem 0px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .pronostico__container {
+    background-color: var(--bulma-scheme-main);
+    width: 55px;
+    height: 90px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pronostico__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 55px;
+  }
+
+
+
+  .pronostico__img {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pronostico__img img {
+    width: 30px;
+  }
+
+  #tiempo-container {
+    overflow-x: auto;
+    white-space: nowrap;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  #tiempo-template .pronostico__card {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  #resultados {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: 20%;
+    gap: 20px;
+
+
+  }
+
+  .ciudad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 80px;
+  margin-left: 40px;
+  padding: 5px;
+ 
+   
+
+    
+
+    
+    }
+    
+
+  }
